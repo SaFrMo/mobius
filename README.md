@@ -1,69 +1,37 @@
-# Phaser + ES6 + Webpack.
-#### A bootstrap project to create games with Phaser + ES6 + Webpack.
+# Deprecated
+Incomplete game jam project. Notes:
 
-![Phaser+ES6+Webpack](https://raw.githubusercontent.com/lean/phaser-es6-webpack/master/assets/images/phaser-es6-webpack.jpg)
+* Lots of Phaser-specific code here. Phaser and ES6 work together very well.
+* Important to have some kind of master State access (ie `this.state` in `Actor.js`) to keep the game organized. Spent a lot of time passing around sprite groups until I switched to this workflow, which took up too much organizational time.
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+Notes from project below:
 
+# Mobius
+Race your opponent to build a ship to take you off the prison planet Mobius! LD38 jam entry.
 
-## Features
-- ESLINT with JavaScript Standard Style configuration
-- Next generation of Javascript
-- Webpack ready
-- Multiple browser testing
-- WebFont Loader
+## Notes
+In Mobius, the player faces off against an AI opponent. You can win by building a shuttle to take you off the planet, or by surviving when your opponent dies.
 
+Players can spend their time building a ship, trying to kill their opponent, or trying to steal their opponent's ship.
 
-# Setup
-To use this bootstrap you’ll need to install a few things before you have a working copy of the project.
+Actors can switch between Health Regeneration and Health Stasis at will. The lower an actor's health, the faster they can move. Actors can use this for a speed boost, although doing so puts their survival at risk. There is a slight delay between being hurt and regenerating health, as well as toggling into Health Regeneration mode and the actual health regeneration.
 
-## 1. Clone this repo:
+Players will need to acquire materials and use them in simple Minecraft-style recipes to build shuttle components, weapons, armor, and defenses.
 
-Navigate into your workspace directory.
-
-Run:
-
-```git clone https://github.com/lean/phaser-es6-webpack.git```
-
-## 2. Install node.js and npm:
-
-https://nodejs.org/en/
-
-
-## 3. Install dependencies (optionally you could install [yarn](https://yarnpkg.com/)):
-
-Navigate to the cloned repo’s directory.
-
-Run:
-
-```npm install``` 
-
-or if you choose yarn, just run ```yarn```
-
-## 4. Run the development server:
-
-Run:
-
-```npm run dev```
-
-This will run a server so you can run the game in a browser.
-
-Open your browser and enter localhost:3000 into the address bar.
-
-Also this will start a watch process, so you can change the source and the process will recompile and refresh the browser
-
-
-## Build for deployment:
-
-Run:
-
-```npm run deploy```
-
-This will optimize and minimize the compiled bundle.
-
-## Credits
-Big thanks to this great repos:
-
-https://github.com/belohlavek/phaser-es6-boilerplate
-
-https://github.com/cstuncsik/phaser-es6-demo
+## Roadmap
+1. ~~Platforming physics~~
+1. ~~Info presentation~~
+    1. ~~Health system and health bar~~
+    1. ~~Arbitrary text display~~
+1. ~~Basic Combat~~
+1. ~~Regroup~~
+1. ~~Currency Pickups~~
+1. ~~Mook AI~~
+1. ~~Basic Plot~~
+1. ~~Regroup~~
+1. ~~Increase game area width past screen~~
+1. Flip player (and gravity) when looping around screen
+1. Single slow enemy
+    1. Not affected by gravity
+    1. Moves slowly toward closest pickup
+1. Collect scrap and bring to location
