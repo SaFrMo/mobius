@@ -11,17 +11,14 @@ Actors can switch between Health Regeneration and Health Stasis at will. The low
 Players will need to acquire materials and use them in simple Minecraft-style recipes to build shuttle components, weapons, armor, and defenses.
 
 ## Roadmap
-1. ~~Platforming physics~~
-1. ~~Info presentation~~
-    1. ~~Health system and health bar~~
-    1. ~~Arbitrary text display~~
-1. ~~Basic Combat~~
-1. ~~Regroup~~
-1. ~~Currency Pickups~~
-1. ~~Mook AI~~
-1. ~~Basic Plot~~
-1. ~~Regroup~~
-1. ~~Increase game area width past screen~~
+1. Platforming physics
+1. Info presentation
+    1. Health system and health bar
+    1. Arbitrary text display
+1. Basic Combat
+1. Currency Pickups
+1. Mook AI
+1. Increase game area width past screen
 1. Flip player (and gravity) when looping around screen
 1. Single slow enemy
     1. Not affected by gravity
