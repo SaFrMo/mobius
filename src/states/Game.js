@@ -13,10 +13,11 @@ export default class extends Phaser.State {
         this.game.physics.arcade.gravity.y = 500
 
         // add a controllable (arrow keys/space bar) Mario-like player character
-        this.game.add.existing( new Player({
+        this.player = this.game.add.existing( new Player({
             game: this.game,
             key: 'mushroom',
-            controls: true
+            controls: true,
+            health: 100
         }))
     }
 

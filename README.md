@@ -11,7 +11,7 @@ Actors can switch between Health Regeneration and Health Stasis at will. The low
 Players will need to acquire materials and use them in simple Minecraft-style recipes to build shuttle components, weapons, armor, and defenses.
 
 ## Roadmap
-1. Platforming physics
+1. ~~Platforming physics~~
 1. Info presentation
     1. Health system and health bar
     1. Arbitrary text display
