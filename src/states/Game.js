@@ -40,8 +40,10 @@ export default class extends Phaser.State {
 	}
 
 	playerVsCrate (player, crate) {
-		if (crate.y < player.y) {
-			crate.destroy()
+        // Make sure we're below the crate
+		const yCutoff = crate.y + crate.height / 2
+		if (yCutoff < player.y) {
+    		crate.explode()
 			player.body.velocity.y = 0
 		}
 	}

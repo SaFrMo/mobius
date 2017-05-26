@@ -7,4 +7,8 @@ export default class extends Phaser.Sprite {
 		this.width = 64
 		this.height = 64
 	}
+
+	explode () {
+		this.destroy()
+	}
 }
