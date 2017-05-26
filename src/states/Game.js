@@ -37,13 +37,15 @@ export default class extends Phaser.State {
 
 	update () {
 		this.game.physics.arcade.collide(this.player, this.crates, this.playerVsCrate, null, this)
+
+		this.player.health -= 0.1
 	}
 
 	playerVsCrate (player, crate) {
         // Make sure we're below the crate
 		const yCutoff = crate.y + crate.height / 2
 		if (yCutoff < player.y) {
-    		crate.explode()
+			crate.explode()
 			player.body.velocity.y = 0
 		}
 	}
